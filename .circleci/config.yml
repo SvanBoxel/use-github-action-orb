@@ -5,8 +5,6 @@ jobs:
       - image: debian:stretch
 
     steps:
-      - checkout
-
       - run:
           name: Greeting
           command: echo Hello, world.
@@ -20,8 +18,5 @@ jobs:
           with: |
             who-to-greet: 'Mona The Octocat'
 
-
 orbs:
-  orb-tools: circleci/orb-tools@8.27.4
-  cli: circleci/circleci-cli@0.1.5
   gh-actions: aengelberg/gh-actions@0.0.1
