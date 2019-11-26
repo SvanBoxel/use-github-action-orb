@@ -1,4 +1,8 @@
 version: 2.1
+
+orbs:
+  gh-actions: aengelberg/gh-actions@0.0.1
+
 jobs:
   build:
     docker:
@@ -13,10 +17,8 @@ jobs:
           name: Print the Current Time
           command: date
           
-      - gh-action:
+      - gh-actions:
           uses: actions/hello-world-docker-action@v1
           with: |
             who-to-greet: 'Mona The Octocat'
 
-orbs:
-  gh-action: aengelberg/gh-actions@0.0.1
