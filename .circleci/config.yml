@@ -23,5 +23,7 @@ jobs:
 
       - gh-actions/action:
           uses: talos-systems/conform@v0.1.0-alpha.16
+          with: |
+            foo: 'bar'
 
 
