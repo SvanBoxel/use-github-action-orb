@@ -15,7 +15,7 @@ jobs:
           name: Print the Current Time
           command: date
           
-      - gh-action:
+      - gh-actions:
           uses: actions/hello-world-docker-action@v1
           with: |
             who-to-greet: 'Mona The Octocat'
